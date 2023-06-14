@@ -25,7 +25,7 @@ class Word {
         bool operator>=(const Word& word);
         bool operator>(const Word& word);
         bool operator!=(const Word& word);
-        std::vector<int> Convert(const std::string& sub_str);
+        static std::vector<int> Convert(const std::string& sub_str);
     private:
         std::vector<std::string> ReadTags(const std::string& tags);
         std::vector<std::string> ReadDefn(const std::string& defn);
